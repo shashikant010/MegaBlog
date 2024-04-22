@@ -4,7 +4,7 @@ import authService from '../../appwrite/auth'
 import { logout } from '../../store/authSlice'
 
 
-function LogoutButton() {
+function LogoutBtn() {
     const dispatch = useDispatch()
     const logoutHandler=()=>{
         authService.logout()
@@ -21,4 +21,4 @@ function LogoutButton() {
   )
 }
 
-export default LogoutButton
+export default LogoutBtn 
